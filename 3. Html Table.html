@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Creating Tables and Lists Using HTML</title>
+    </head>
+    <body>
+        <h2>Creating Tables Using HTML</h2>
+            
+            <table border="1" cellpadding="15" cellspacing="0">
+                <tr>
+                    <td><b>Table Attributes Names</b></td>
+                    <td><b>Their Purpose</b></td>
+                </tr>
+                <tr>
+                    <td>Border</td>
+                    <td>Thick/Thin the border.<br> 0 is no border and width increases from 1 to onwards</td>
+                </tr>
+                <tr>
+                    <td>Cell Padding</td>
+                    <td>Row width increases from 1 to onwards</td>
+                </tr>
+                <tr>
+                    <td>Cell Spacing</td>
+                    <td>Difference between lines of rows and column.<br>
+                         0 is preferable</td>
+                </tr>
+            </table>
+            <p>Now lets move to an advanced table</p>
+
+            <table border="1" cellpadding="15" cellspacing="0">
+                <tr>
+                    <td colspan="3"><b>JOB FORM</b></td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td rowspan="2">Choose Photo</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Address</td>
+                </tr>
+            </table>
+            <p>
+                Now what did we do here?<br><br>
+
+                In case we have uneven rows and columns in a table, we use colspan and rowspan to adjust the tables.
+                In first row, JOB FORM was taking space of 3 columns so we give colspan="3"<br>
+                Similarly Choose Photo was taking space of 2 rows so we did rowspan="2"<br>
+                Finally Address is also given colspan="2"<br>
+            </p>
+
+            <h2>Creating Lists Using HTML</h2>
+            <p>
+                There are 3 types of lists in HTML Lets discuss them one by one.<br><br>
+                <b>1. Unordered List(ul)</b><br>
+                    Unordered lists can be made by <q><b>ul</b></q> tag. while <q><b>li</b></q> describes list items.</p>
+                    
+                    <ul type="square">
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Ruby</li>
+                        
+                    </ul>
+                <p>Now unordered lists uses 4 types of bullets which can be defined in the ul tag such as <q>circle, disc(default), square and none</q>. I have used square in my list.
+                <br><br>
+                <b>Syntax = <q>ul type="square"</q></b>
+                <br><br><br>
+
+                <b>2. Ordered List(ol)</b><br>
+                    Ordered lists can be made by <q><b>ol</b></q> tag. while <q><b>li</b></q> describes list items.
+                    
+                     <b>5 Types of bullets in ol</b></p>
+                    <ol type="1" start="11">
+                        <li>Type="A" will generate bullets of A, B, C...</li>
+                        <li>Type="a" will generate bullets of a, b, c...</li>
+                        <li>Type="I" will generate roman counting bullets of I, II, III...</li>
+                        <li>Type="i" will generate roman counting bullets of i, ii,...</li>
+                        <li>Type="1" will generate bullets of 1, 2, 3...</li>
+                        
+                    </ol>
+                <p>Now you can also start ordered lists from any number for that we use start="11" It will start bullets from 11th term of prescribed bullets. I have used 11 in my list.</p>
+                <br><br>
+                <p><b>Syntax = <q>ol type="1" start="11"</q></b></p>
+
+                <br><br><br>
+
+                <p><b>3. Descriptive List(dl)</b><br>
+                    Descriptive lists can be made by <q><b>dl</b></q> tag. while <q><b>dt</b></q> describes descriptive term and <q><b>dd</b></q> describes descriptive definition.</p>
+                    
+                    <dl> 
+                        <dt>C++</dt>
+                        <dd>C++ is a programming language</dd>
+
+                        <dt>PHP</dt>
+                        <dd>PHP is a back-end language</dd>
+
+                        <dt>SQL</dt>
+                        <dd>SQL is a database language</dd>
+                        
+                    </dl>
+                
+                <br><br>
+
+    </body>
+</html>
