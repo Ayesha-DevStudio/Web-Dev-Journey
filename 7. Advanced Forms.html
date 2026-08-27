@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Advanced Form</title>
+    </head>
+    <body>
+        <h1> Student Registration Form </h1>
+
+        <fieldset>
+            <legend>Sign up</legend>
+            
+            <form action="7. register.php" target="_blank" name="myForm" novalidate enctype="multipart/form-data">
+            <label>First Name</label>
+            <input type="text">
+            <br><br>
+
+            <label>Last Name</label>
+            <input type="text">
+            <br><br>
+
+            <label>Age Group</label>
+            <select>
+                <option selected disabled>Select your Age Group</option>
+                <optgroup label="Adults">
+                    <option>16 to 19 years</option>
+                    <option>20 to 25 years</option>
+                </optgroup>
+                <optgroup label="Seniors">
+                    <option>26 to 30 years</option>
+                    <option>Above 30 years</option>
+                </optgroup>
+            </select>
+            <br><br>
+
+            <label>Education</label>
+            <select>
+                <option selected disabled>Select your Education Status</option>
+                <option>High School</option>
+                <option>College</option>
+                <option>University</option>
+            </select>
+            <br><br>
+
+            <label>Select your Preferred Subject</label>
+            <input list="Subject">
+            <datalist id="Subject">
+                <option value="SE"></option>
+                <option value="CS"></option>
+                <option value="IT"></option>
+                <option value="ACC"></option>
+                <option value="PHY"></option>
+            </datalist>
+            <br><br>
+
+            <label>Address</label><br>
+            <textarea rows="3" cols="40"></textarea>
+            <br><br>
+            <button type="submit">Register</button>
+
+            </form>
+
+        </fieldset>
+    </body>
+</html>
