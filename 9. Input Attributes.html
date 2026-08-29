@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Input & Type Attributes</title>
+    </head>
+    <body>
+        <form>
+        <h1>Input Attributes Explained</h1>
+        <h3>1. Pattern</h3>
+        <p>It restricts the user to write the input in desired pattern.</p>
+        <input type="text" pattern="[A-Za-z]{3}">
+        <input type="submit">
+
+        <h3>2. Placeholder</h3>
+        <p>It places a temporary text in the input guiding the user what to input.</p>
+        <input type="text" placeholder="Enter Country Code">
+        <input type="submit">
+
+        <h3>3. Required</h3>
+        <p>It requires the user to write in the field by displaying it as required.</p>
+        <input type="text" required>
+        <input type="submit">
+
+        <h3>4. Step</h3>
+        <p>It specifies the step as writing input as multiple of the number given. e.g. The following has step of 5 so you can only write values that are multiple of 5.</p>
+        <input type="number" step="5">
+        <input type="submit">
+
+        <h3>5. Autofocus</h3>
+        <p>It automatically focuses the cursor to the input field.</p>
+        <input type="text" autofocus>
+        <input type="submit">
+
+        <h3>6. Width &amp; Height</h3>
+        <p>It specifies the width and height of the image.</p>
+        <input type="image" src="5. cutty.jpg" width="200" height="200" alt="Submit">
+        <input type="submit">
+
+        <h3>7. Autocomplete</h3>
+        <p>It shows suggestions to user based on previous inputs. It has two values: on and off.</p>
+        <input type="text" autocomplete="on">
+        <input type="submit">
+
+        <br><br><br>
+
+        <h1> Input Type Attributes Explained </h1>
+
+        <h3>1. Value</h3>
+        <p>Lets a programmer add a value in input field.</p>
+        <input type="text" value="Ayesha">
+        <input type="submit">
+
+        <h3>2. Readonly</h3>
+        <p>Lets us turn the input field to a readonly field which cannot be edited.</p>
+        <input type="text" value="Ayesha" readonly>
+        <input type="submit">
+
+        <h3>3. Disabled</h3>
+        <p>It disables the input so the input cannot be selected again.</p>
+        <input type="text" value="Ayesha" disabled>
+        <input type="submit">
+
+        <h3>4. Size</h3>
+        <p>It specifies the size of input area.</p>
+        <input type="text" value="Ayesha" size="15">
+        <input type="submit">
+
+        <h3>5. Maxlength</h3>
+        <p>It specifies the max characters a user can put in the input field. It is mostly used in password input or PIN.</p>
+        <input type="text" value="Enter 4-digit PIN" size="15" maxlength="4">
+        <input type="submit">
+
+        <h3>6. Min</h3>
+        <p>It specifies the minimum digit a user can input. For example let's put it for 5.</p>
+        <input type="number" min="5">
+        <input type="submit">
+
+        <h3>7. Max</h3>
+        <p>It specifies the maximum digit a user can input. For example let's put it for 100.</p>
+        <input type="number" max="100">
+        <input type="submit">
+
+        <h3>8. Multiple</h3>
+        <p>It allows user to choose multiple files in case of file input.</p>
+        <input type="file" multiple>
+        <input type="submit">
+        </form>
+
+    </body>
+</html>
