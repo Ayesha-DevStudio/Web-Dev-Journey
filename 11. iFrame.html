@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Using iFrame in HTML</title>
+    </head>
+    <body>
+        <h1> iFrame </h1>
+        <p>An iframe allows us to embed webpages, other websites, videos, or maps on our webpage.</p>
+
+        <h3>1. Embedding our own webpage</h3>
+        <p><b>Syntax:</b><br> 
+            <code>&lt;iframe src="filename.html" name="Myframe" width="500" height="300"&gt;&lt;/iframe&gt;</code>
+        </p>
+        <iframe src="6. Html Forms.html" name="Myframe" width="500" height="300"></iframe>
+
+        <br><br><br>
+        <h3>2. Embedding some other website</h3>
+        <p> 
+            Let's suppose I want to add a link that opens another website inside the frame above when clicked: <br>
+            <a href="https://www.icon-icons.com/" target="Myframe">Click here to go to icons website</a>
+        </p>
+
+        <br><br><br>
+        <h3>3. Embedding a Google Map</h3>
+        <p>
+            Now let's embed a Google map onto the website. Search for whichever place you like on Google Maps, click <b>Share</b>, click <b>Embed a map</b>, copy the HTML code, and paste it here.<br>
+            Here, I have embedded a Google map of Pakistan e.g.<br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7050398.57309783!2d68.9966984!3d30.36295725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38db52d2f8fd751f%3A0x46b7a1f7e614925c!2sPakistan!5e0!3m2!1sen!2s!4v1787224509746!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </p>
+
+        <br><br><br>
+        <h3>4. Embedding a YouTube Video</h3>
+        <p>
+            Let's suppose I want to embed a YouTube video. Simply click the video, click <b>Share</b>, click <b>Embed</b>, copy the code, and paste it here.
+            Remember, some websites restrict access to iframes, so videos may not load or play. e.g.<br><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kUMe1FH4CHE?si=_pBtSCU4x1a4q0sZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </p>
+        <p>
+            Another method is to use the video ID from the URL link:<br><br>
+            <iframe src="https://www.youtube.com/embed/X5fm6NmuCH4?autoplay=0&amp;mute=0&amp;loop=0" width="500" height="300"></iframe>
+        </p>
+        <p>
+            We can add query parameters to YouTube URLs such as:
+        </p>
+        <ul>
+            <li><b>autoplay=1</b> (automatically plays video; 0 disables it)</li>
+            <li><b>mute=1</b> (mutes video when played; 0 enables sound)</li>
+            <li><b>loop=1</b> (restarts video automatically; 0 stops when finished)</li>
+            <li><b>controls=1</b> (shows control buttons; 0 hides controls)</li>
+        </ul>
+
+        <h3>5. Adding an Audio File</h3>
+        <p>
+            Now I want to add local audio from my device onto the webpage. Here is how to do that using the syntax below:
+        </p>
+        <audio controls autoplay loop muted>
+            <source src="9. Sky_High.mp3" type="audio/mpeg">
+        </audio>
+        <br><br>
+        <p>
+            <b>Syntax Details:</b><br>
+            <b>&lt;audio&gt; tag:</b> Tells the browser it is an audio file.<br>
+            <b>source src:</b> Specifies the audio file path.<br>
+            <b>type:</b> Specifies the MIME type (e.g., <code>audio/mpeg</code> for MP3).
+        </p>
+        <p><b>Attributes of audio tag:</b></p>
+        <ul>
+            <li><b>controls:</b> Shows playback controls (play, pause, volume).</li>
+            <li><b>autoplay:</b> Automatically plays audio on page load.</li>
+            <li><b>loop:</b> Automatically replays audio when finished.</li>
+            <li><b>muted:</b> Mutes audio by default.</li>
+        </ul>
+
+        <h3>6. Adding a Video File</h3>
+        <p>
+            Adding a local video is similar to adding audio:
+        </p>
+        <video controls autoplay loop width="400" height="300">
+            <source src="9. Asian Koel.mp4" type="video/mp4">
+        </video>
+        <br><br>
+        <p>
+            <b>Syntax Details:</b><br>
+            <b>&lt;video&gt; tag:</b> Tells the browser it is a video file.<br>
+            <b>source src:</b> Specifies the video file path.<br>
+            <b>type:</b> Specifies the MIME type (e.g., <code>video/mp4</code>).
+        </p>
+        <p><b>Attributes of video tag:</b></p>
+        <ul>
+            <li><b>controls:</b> Shows video controls.</li>
+            <li><b>autoplay:</b> Automatically plays video on page load.</li>
+            <li><b>loop:</b> Automatically replays video when finished.</li>
+            <li><b>muted:</b> Mutes video by default.</li>
+        </ul>
+    </body>
+</html>
