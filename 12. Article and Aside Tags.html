@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Advanced HTML</title>
+    </head>
+    <body>
+        <h1> Using Article and Aside Tags </h1>
+        <article style="width: 50%; float: left; padding: 0 20px;">
+            <h3>C++</h3>
+            <p>C++ is a fast, powerful general-purpose programming language created by Bjarne Stroustrup in 1985.</p>
+
+            <h3>Java</h3>
+            <p>Java is a high-level, class-based, object-oriented programming language first released by Sun Microsystems in 1995.</p>
+
+            <h3>PHP</h3>
+            <p>PHP is a popular, free, open-source server-side scripting language used to build dynamic and interactive web pages. It runs on a web server, can be embedded directly into HTML, and easily connects with databases like MySQL.</p>
+        </article>
+
+        <aside style="width: 40%; float: right; padding: 10px; border: 2px solid #000;">
+            <h2>Latest Posts</h2>
+            <h4>Inputs &amp; Outputs</h4>
+            <button type="button">Read More</button>
+
+            <h4>If Else Conditions</h4>
+            <button type="button">Read More</button>
+
+            <h4>Operators</h4>
+            <button type="button">Read More</button>
+
+            <h4>Boolean</h4>
+            <button type="button">Read More</button>
+        </aside>
+
+        <h1 style="clear: both;"><br><br> Using Details and Summary Tags </h1>
+        <p>We can also write the above text using the details tag which creates a much cleaner view.</p>
+        <fieldset>
+            <legend>Basic Definitions</legend>
+            <details>
+                <summary>C++</summary>
+                <p>C++ is a fast, powerful general-purpose programming language created by Bjarne Stroustrup in 1985.</p>
+            </details><br>
+
+            <details>
+                <summary>Java</summary>
+                <p>Java is a high-level, class-based, object-oriented programming language first released by Sun Microsystems in 1995.</p>
+            </details><br>
+
+            <details>
+                <summary>PHP</summary>
+                <p>PHP is a popular, free, open-source server-side scripting language used to build dynamic and interactive web pages. It runs on a web server, can be embedded directly into HTML, and easily connects with databases like MySQL.</p>
+            </details><br>
+        </fieldset>
+
+        <h1 style="clear: both;"><br><br> Using Base and Dialog Tags </h1>
+        <h3>Base Tag</h3>
+        <p>To set a base path for relative URLs (such as images in a folder), we use the <code>&lt;base&gt;</code> tag inside the <code>&lt;head&gt;</code> element, e.g., <code>&lt;base href="images/"&gt;</code>.</p>
+
+        <h3>Dialog Tag</h3>
+        <p>In websites, pop-up dialog boxes and modals are created using the <code>&lt;dialog&gt;</code> tag.</p>
+        <dialog open>
+            <form method="dialog">
+                <p>Sign up to see the whole webpage</p>
+                <input type="email" placeholder="Enter Email"><br><br>
+                <input type="password" placeholder="Enter Password"><br><br>
+                <button type="submit">Sign in</button><br><br>
+                Don't have an account? <button type="button">Sign up</button>
+            </form>
+        </dialog>
+    </body>
+</html>
